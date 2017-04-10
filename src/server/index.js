@@ -1,21 +1,20 @@
-var express = require('express');
-var app = express();
-var port = 8080;
-var bodyParser = require('body-parser');
-var path = require('path');
+const express = require('express');
+const app = express();
+const PORT = 8080;
+const bodyParser = require('body-parser');
+const path = require('path');
 
-
-app.use('/static', express.static('./../build'));
+// API routes Async
+app.use('/static', express.static('./build'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
 //App Routes
-app.use('/', function (req, res, next){
-    //  res.send(s"conection");
-    res.sendFile(path.join(__dirname + './../build/index.html'));
+app.use('/',function (req, res, next) {
+    res.sendFile(path.join(__dirname + '/../../build/index.html'));
 });
 
-app.listen(port,function (){
-    console.log("app run on port "+port);
-});
+app.listen(PORT, ()=>{
+    console.log("Server running on " + PORT);
+})

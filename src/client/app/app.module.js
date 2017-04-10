@@ -1,7 +1,4 @@
-(function (){
-    'use strict';
-
-    angular
-        .module('app',[]);
-
-})();
+function() {
+  angular
+  .module('app', ['Cluster'])
+}

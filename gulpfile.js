@@ -1,11 +1,8 @@
-/**
- * Created by Josue on 22/11/16.
- */
 const config = require('./gulp.config.js')();
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const plugs = gulpLoadPlugins();
-const nodemon = require('nodemon');
+
 const env = process.env.NODE_ENV || 'local';
 const merge = require('merge-stream');
 const eventStream = require('event-stream');
@@ -97,7 +94,7 @@ gulp.task('inject', ['bundle'], () => {
         .pipe(gulp.dest(config.build));
 });
 
-gulp.task('bundle', ['build'], () => {
+gulp.task('bundle', ['watch'], () => {
 
     return gulp.src(`${config.index}`)
         .pipe(gulp.dest(config.build));
@@ -116,6 +113,7 @@ gulp.task('watch', ()=> {
 
     gulp.watch(config.files.jade, ['scripts-app']);
     gulp.watch(config.files.js, ['scripts-app']);
+    gulp.watch(config.files.sass, ['style-app']);
 });
 
 gulp.task('nodemon', () => {
@@ -131,5 +129,3 @@ gulp.task('nodemon', () => {
             console.log('server restarted!')
         })
 });
-
-

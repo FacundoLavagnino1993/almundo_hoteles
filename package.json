@@ -1,21 +1,30 @@
 {
-  "name": "almundo_hoteles",
+  "name": "AppAlmundo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hoteles",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FacundoLavagnino1993/almundo_hoteles.git"
+    "url": "git+https://github.com/hernimen/AppAlmundo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FacundoLavagnino1993/almundo_hoteles/issues"
+    "url": "https://github.com/hernimen/AppAlmundo/issues"
   },
-  "homepage": "https://github.com/FacundoLavagnino1993/almundo_hoteles#readme",
+  "homepage": "https://github.com/hernimen/AppAlmundo#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "co-router": "^1.0.4",
+    "express": "^4.15.2",
+    "gulp-concat": "^2.6.1",
+    "mongoose": "^4.9.3",
+    "pug": "^2.0.0-beta11"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.0.0",
@@ -27,6 +36,7 @@
     "gulp-inject": "^4.1.0",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.2.0",
+    "gulp-nodemon": "^2.2.1",
     "gulp-order": "^1.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^7.1.0",
@@ -37,15 +47,6 @@
     "lite-server": "^2.2.2",
     "main-bower-files": "^2.13.1",
     "merge-stream": "^1.0.0",
-    "nodemon": "^1.11.0",
     "stream-series": "^0.1.1"
-  },
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "co-router": "^1.0.4",
-    "express": "^4.15.2",
-    "gulp-concat": "^2.6.1",
-    "mongoose": "^4.9.3",
-    "pug": "^2.0.0-beta11"
   }
 }

@@ -1,4 +1,5 @@
-function() {
+(function() {
   angular
-  .module('app', ['Cluster'])
-}
+  .module('app', ['hotels-result'])
+
+})();

@@ -1,4 +1,4 @@
 (function(){
     angular
-        .module('hoteles_result',[])
+        .module('hoteles-result',[])
 })();

@@ -1,7 +1,7 @@
 {
-  "name": "AppAlmundo",
+  "name": "resultadohoteles",
   "version": "1.0.0",
-  "description": "Hoteles",
+  "description": "Ejercicio resultado de hoteles",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hernimen/AppAlmundo.git"
+    "url": "git+https://github.com/SebastianGDeBin/resultadoHoteles.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hernimen/AppAlmundo/issues"
+    "url": "https://github.com/SebastianGDeBin/resultadoHoteles/issues"
   },
-  "homepage": "https://github.com/hernimen/AppAlmundo#readme",
+  "homepage": "https://github.com/SebastianGDeBin/resultadoHoteles#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "co-router": "^1.0.4",

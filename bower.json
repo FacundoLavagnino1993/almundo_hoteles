@@ -3,10 +3,10 @@
   "description": "Ejercicio resultado de hoteles",
   "main": "index.js",
   "authors": [
-    "Hernan Bessera <hernanman_1@hotmail.com>"
+    "Sebastian De Bin <sebastiandebin@live.com.ar>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/hernimen/AppAlmundo.git",
+  "homepage": "https://github.com/SebastianGDeBin/resultadoHoteles",
   "ignore": [
     "**/.*",
     "node_modules",

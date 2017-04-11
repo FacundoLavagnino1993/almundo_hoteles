@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 // API routes Async
-app.use('/static', express.static('./build'));
+app.use('/static', express.static('./../build'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 

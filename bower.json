@@ -1,12 +1,12 @@
 {
-  "name": "resultadohoteles",
-  "description": "Ejercicio resultado de hoteles",
+  "name": "hotelsResult",
+  "description": "Ejercicio de hoteles",
   "main": "index.js",
   "authors": [
-    "Sebastian De Bin <sebastiandebin@live.com.ar>"
+    "Facundo lavagnino 10/04/17"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/SebastianGDeBin/resultadoHoteles",
+  "homepage": "https://github.com/FacundoLavagnino1993/almundo_hoteles",
   "ignore": [
     "**/.*",
     "node_modules",

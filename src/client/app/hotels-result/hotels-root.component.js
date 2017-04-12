@@ -7,7 +7,7 @@
             templateUrl: "hotels-result/hotels-root.html"
         });
 
-        //HotelsController.$inject = ['HotelsService'];
+
 
         function HotelsController(){
 

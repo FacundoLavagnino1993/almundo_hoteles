@@ -77,7 +77,7 @@ gulp.task('scripts-app', ['compile-jade'], () => {
 });
 
 
-gulp.task('inject', ['bundle'], () => {
+gulp.task('inject', ['styles-app', 'scripts-lib', 'scripts-app'], () => {
 
     const series = require('stream-series');
     // It's not necessary to read the files (will speed up things), we're only after their paths:
@@ -86,19 +86,14 @@ gulp.task('inject', ['bundle'], () => {
     const scriptApp = gulp.src([`${config.build}*.js`, `!${config.build}*lib*.js`], {read: false});
     const seriesStreams = series(scriptLib, styleApp, scriptApp);
 
-    return gulp.src(`${config.build}index.html`)
+    return gulp.src(`${config.index}`)
         .pipe(plugs.inject(seriesStreams, {
             addPrefix:'/static',
-            relative: true
+            ignorePath: '/build'
         }))
         .pipe(gulp.dest(config.build));
 });
 
-gulp.task('bundle', ['watch'], () => {
-
-    return gulp.src(`${config.index}`)
-        .pipe(gulp.dest(config.build));
-});
 
 
 gulp.task('default', ['build', 'inject','nodemon']);
@@ -106,7 +101,7 @@ gulp.task('default', ['build', 'inject','nodemon']);
 /**
  * Build!!!!
  */
-gulp.task('build', ['styles-app', 'scripts-lib', 'scripts-app']);
+gulp.task('build', []);
 
 
 gulp.task('watch', ()=> {

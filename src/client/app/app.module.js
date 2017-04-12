@@ -1,5 +1,5 @@
 (function() {
   angular
-  .module('app', ['hotels-result'])
+    .module('app', ['hotelsResult']);
 
 })();

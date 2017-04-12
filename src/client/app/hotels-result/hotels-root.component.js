@@ -1,17 +1,19 @@
 (function(){
     'use strict';
     angular
-        .module('hotels-result')
-        .component('hotels-root', {
+        .module('hotelsResult')
+        .component('hotelsRoot', {
             controller: HotelsController,
-            templateUrl: "hotel-result/hotels-root.html"
+            templateUrl: "hotels-result/hotels-root.html"
         });
+
+        //HotelsController.$inject = ['HotelsService'];
 
         function HotelsController(){
 
             this.$onInit = function(){
-                alert("HotelsController");
 
+                console.log("page ready");
             }
         }
 })();

@@ -1,9 +1,10 @@
 (function() {
+    'use strict';
     angular
         .module('hotels-result')
         .component('hotel-list',{
             bindings:{
-                item : '<'
+                hotels : '<'
             },
             templateUrl:'hotels-result/hotels-list/hotel-list.html'
         });

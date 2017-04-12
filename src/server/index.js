@@ -1,4 +1,3 @@
-
 const express = require('express');
 const app = express();
 const PORT = 8080;
@@ -13,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //App Routes
 app.use('/',function (req, res, next) {
-    res.sendFile(path.join(__dirname + '/../../build/index.html'));
+    res.sendFile(path.join(__dirname + './../../build/index.html'));
 });
 
 app.listen(PORT, ()=>{

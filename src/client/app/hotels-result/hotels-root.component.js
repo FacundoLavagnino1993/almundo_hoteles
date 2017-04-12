@@ -13,5 +13,5 @@
                 alert("HotelsController");
 
             }
-        };
+        }
 })();

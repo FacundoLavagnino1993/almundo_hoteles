@@ -1,5 +1,8 @@
-(function() {
-  angular
-    .module('app', ['hotelsResult']);
+(function (){
+  'use strict';
 
+  angular
+    .module('app', [
+      'hotelsResult'
+    ]);
 })();

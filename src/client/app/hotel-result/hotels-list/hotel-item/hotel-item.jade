@@ -3,10 +3,10 @@
                 img(src="{{$ctrl.item.image}}")
         .col-md-5.details
                 .name {{$ctrl.item.name}}
-                img.stars {{$ctrl.item.stars}}
+                .stars {{$ctrl.item.stars}}
         .col-md-3.pricebox
                 p Precio por noche por habitacion
-                span.price.moneda ARS {{$ctrl.item.price}}
+                p.moneda ARS <span id="price">{{$ctrl.item.price}}</span>
                 p Impuestos y tasas no incluidos
                 a(href="" target="new_blank")
                         button Ver hotel

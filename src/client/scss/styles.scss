@@ -1,6 +1,6 @@
 body {
 	background-color: lavender;
-	font-family: "Courier 10 Pitch";
+
 }
 
 ul{
@@ -24,18 +24,28 @@ ul{
 
 }
 .details .name{
-
-	font-family: "DejaVu Sans";
+	font-family: Ubuntu;
 	font-size: 16px;
 	font-weight: bold;
 }
 .pricebox{
 	border-left: 1px #DDD dashed ;
-
+	text-align: center;
 }
 
-.pricebox p{
+.pricebox > p{
+	font-family: Ubuntu;
 	font-size: 12px;
+}
+
+.pricebox .moneda{
+	font-size: 18px;
+	color: rgba(249,96,0,0.82);
+}
+
+#price{
+	font-size: 32px;
+	font-weight: bold;
 }
 
 

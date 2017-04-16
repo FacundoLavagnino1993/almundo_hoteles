@@ -1,8 +1,41 @@
 body {
-	background-color: rgba(202,199,249,0.82)
+	background-color: lavender;
+	font-family: "Courier 10 Pitch";
 }
-.container-fluid{
-	background-color: lightblue;
+
+ul{
+	list-style-type: none;
+	float:right;
+}
+
+.row {
+	width: 800px;
+	height: 200px;
+	background-color: white;
+	box-shadow: 0px 2px 4px 0px gray;
+	margin: 20px;
+}
+.cluster{
+	padding : 5px;
+	height: auto;
+}
+
+.slider{
+
+}
+.details .name{
+
+	font-family: "DejaVu Sans";
+	font-size: 16px;
+	font-weight: bold;
+}
+.pricebox{
+	border-left: 1px #DDD dashed ;
+
+}
+
+.pricebox p{
+	font-size: 12px;
 }
 
 

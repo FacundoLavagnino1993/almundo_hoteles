@@ -2,14 +2,15 @@
         .col-md-4.slider
                 img(src="{{$ctrl.item.image}}")
         .col-md-5.details
-                .name {{$ctrl.item.name}}
-                .stars {{$ctrl.item.stars}}
+                p.name {{$ctrl.item.name}}
+                p.stars {{$ctrl.item.stars}}
+                p.description Solo la habitacion
         .col-md-3.pricebox
                 p Precio por noche por habitacion
-                p.moneda ARS <span id="price">{{$ctrl.item.price}}</span>
+                p.coin ARS <span id="price">{{$ctrl.item.price}}</span>
                 p Impuestos y tasas no incluidos
                 a(href="" target="new_blank")
                         button Ver hotel
-                p Paga en cuotas
-                a(href="" target="new_blank")
-                        p paga en efectivo
+                .pstrong
+                        p Pagá en cuotas
+                        p Pagá en destino

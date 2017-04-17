@@ -1,6 +1,6 @@
 body {
 	background-color: lavender;
-
+    font-family: sans-serif;
 }
 
 ul{
@@ -10,7 +10,7 @@ ul{
 
 .row {
 	width: 800px;
-	height: 200px;
+	//height: 150px;
 	background-color: white;
 	box-shadow: 0px 2px 4px 0px gray;
 	margin: 20px;
@@ -24,31 +24,53 @@ ul{
 
 }
 .details .name{
-	font-family: Ubuntu;
 	font-size: 16px;
 	font-weight: bold;
 }
 .pricebox{
 	border-left: 1px #DDD dashed ;
 	text-align: center;
+
 }
 
 .pricebox > p{
-	font-family: Ubuntu;
-	font-size: 12px;
+	font-size: 10px;
 }
 
-.pricebox .moneda{
+.coin{
 	font-size: 18px;
-	color: rgba(249,96,0,0.82);
+	color: #df6800;
+    vertical-align: super;
 }
-
+.description{
+    color: #df6800;
+    font-size: 12px;
+    font-weight: bold;
+}
 #price{
 	font-size: 32px;
 	font-weight: bold;
 }
 
+button{
+  background-color: #00016c;
+  border-radius: 3px;
+  border: 2px solid #00016c;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  width: 120px;
+  height: 30px;
+  border: none;
+}
 
+.pstrong{
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 5px;
+}
 
-
+.pstrong p{
+	line-height: 4px;
+}
 

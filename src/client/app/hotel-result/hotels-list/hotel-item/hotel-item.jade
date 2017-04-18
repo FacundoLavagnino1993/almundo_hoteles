@@ -1,16 +1,21 @@
-.row.cluster
-        .col-md-4.slider
+.row
+        .col-md-3.slider
                 img(src="{{$ctrl.item.image}}")
-        .col-md-5.details
+        .col-md-7.details
                 p.name {{$ctrl.item.name}}
-                p.stars {{$ctrl.item.stars}}
-                p.description Solo la habitacion
-        .col-md-3.pricebox
+                p.stars(ng-repeat=("star in $ctrl.stars() track by $index"))
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                p.description <i class="fa fa-bed" aria-hidden="true"></i> Solo la habitacion
+                span.icon <i class="fa fa-glass" aria-hidden="true"></i>
+                span.icon <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                span.icon <i class="fa fa-coffee" aria-hidden="true"></i>
+                span.icon <i class="fa fa-wifi" aria-hidden="true"></i>
+        .col-md-2.pricebox
                 p Precio por noche por habitacion
-                p.coin ARS <span id="price">{{$ctrl.item.price}}</span>
+                p.coin <span id="cointype">ARS</span> <span id="price">{{$ctrl.item.price}}</span>
                 p Impuestos y tasas no incluidos
                 a(href="" target="new_blank")
                         button Ver hotel
                 .pstrong
                         p Pagá en cuotas
-                        p Pagá en destino
+                        a(href="http://www.google.com") Pagá en destino

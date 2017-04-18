@@ -14,6 +14,8 @@
 
       function hotelsController(HotelsService) {
 
+          var self = this;
+
         this.getHotelsInit = function (){
           return HotelsService.getHotels();
         };

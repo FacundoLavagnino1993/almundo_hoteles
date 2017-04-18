@@ -5,19 +5,15 @@ body {
 
 ul{
 	list-style-type: none;
-	float:right;
 }
 
 .row {
-	width: 800px;
-	//height: 150px;
+	width: 100%;
 	background-color: white;
 	box-shadow: 0px 2px 4px 0px gray;
 	margin: 20px;
-}
-.cluster{
-	padding : 5px;
-	height: auto;
+  padding : 10px;
+  height: auto;
 }
 
 .slider{
@@ -26,6 +22,17 @@ ul{
 .details .name{
 	font-size: 16px;
 	font-weight: bold;
+}
+
+.stars{
+  display: inline-block;
+  color:#FDBA12;
+  letter-spacing: 5px;
+}
+
+.icon{
+  letter-spacing: 5px;
+  color: #444;
 }
 .pricebox{
 	border-left: 1px #DDD dashed ;
@@ -38,9 +45,14 @@ ul{
 }
 
 .coin{
-	font-size: 18px;
+	font-size: 14px;
 	color: #df6800;
-    vertical-align: super;
+
+}
+
+#cointype{
+  vertical-align: super;
+  font-size:18px;
 }
 .description{
     color: #df6800;
@@ -53,24 +65,30 @@ ul{
 }
 
 button{
-  background-color: #00016c;
+  background-color: #002C77;
   border-radius: 3px;
-  border: 2px solid #00016c;
+  border: none;
   font-weight: bold;
   font-size: 12px;
   color: white;
-  width: 120px;
+  width: 140px;
   height: 30px;
-  border: none;
+  border-bottom: 2px solid #000138;
+
 }
 
 .pstrong{
 	font-size: 11px;
 	font-weight: bold;
 	margin-top: 5px;
+    line-height: 4px;
 }
 
-.pstrong p{
-	line-height: 4px;
+.pstrong a{
+  color: #157ab1;
+}
+
+.pstrong a:visited{
+  color:#10567b;
 }
 

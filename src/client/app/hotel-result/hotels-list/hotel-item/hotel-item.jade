@@ -1,6 +1,6 @@
-.row
+.hotels-ctn
         .col-md-3.slider
-                img(src="{{$ctrl.item.image}}")
+                slider(item="{{$ctrl.images}}")
         .col-md-7.details
                 p.name {{$ctrl.item.name}}
                 p.stars(ng-repeat=("star in $ctrl.stars() track by $index"))

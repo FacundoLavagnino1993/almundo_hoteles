@@ -1,21 +1,18 @@
-.row
-        .col-md-3.slider
-                img(src="{{$ctrl.item.image}}")
-        .col-md-7.details
+.cluster
+        .slider-ctn
+                slider(items="$ctrl.item.images")
+        .details-ctn
                 p.name {{$ctrl.item.name}}
                 p.stars(ng-repeat=("star in $ctrl.stars() track by $index"))
                         <i class="fa fa-star" aria-hidden="true"></i>
                 p.description <i class="fa fa-bed" aria-hidden="true"></i> Solo la habitacion
-                span.icon <i class="fa fa-glass" aria-hidden="true"></i>
-                span.icon <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                span.icon <i class="fa fa-coffee" aria-hidden="true"></i>
-                span.icon <i class="fa fa-wifi" aria-hidden="true"></i>
-        .col-md-2.pricebox
+                ul
+                        li(ng-repeat="(key,value) in $ctrl.item.amenities" ng-class="$ctrl.getIcon(key)")
+        .pricebox-ctn
                 p Precio por noche por habitacion
-                p.coin <span id="cointype">ARS</span> <span id="price">{{$ctrl.item.price}}</span>
+                p.coin <span class="cointype">ARS</span> <span class="number">{{$ctrl.item.price}}</span>
                 p Impuestos y tasas no incluidos
                 a(href="" target="new_blank")
                         button Ver hotel
-                .pstrong
-                        p Pagá en cuotas
-                        a(href="http://www.google.com") Pagá en destino
+                p <strong>Pagá en cuotas</strong>
+                        <br><a(hef="http://www.google.com")/> Pagá en destino

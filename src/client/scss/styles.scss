@@ -1,94 +1,46 @@
+//@import "./font";
+@import "./slider";
+@import "./_hotel-list.scss";
+
+
+
 body {
 	background-color: lavender;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul{
 	list-style-type: none;
-}
-
-.row {
-	width: 100%;
-	background-color: white;
-	box-shadow: 0px 2px 4px 0px gray;
-	margin: 20px;
-  padding : 10px;
-  height: auto;
-}
-
-.slider{
-
-}
-.details .name{
-	font-size: 16px;
-	font-weight: bold;
-}
-
-.stars{
-  display: inline-block;
-  color:#FDBA12;
-  letter-spacing: 5px;
-}
-
-.icon{
-  letter-spacing: 5px;
-  color: #444;
-}
-.pricebox{
-	border-left: 1px #DDD dashed ;
-	text-align: center;
+	margin: 0px;
+	padding: 8px 0px;
 
 }
 
-.pricebox > p{
-	font-size: 10px;
+.breadcrumb-ctn{
+	height: 20px;
+	boder-color: black;
+	border: 2px solid black;
+}
+.filter-ctn{
+	height: 200px;
+	border-color: black;
+	border: 2px solid black;
 }
 
-.coin{
-	font-size: 14px;
-	color: #df6800;
 
-}
-
-#cointype{
-  vertical-align: super;
-  font-size:18px;
-}
-.description{
-    color: #df6800;
-    font-size: 12px;
-    font-weight: bold;
-}
-#price{
-	font-size: 32px;
-	font-weight: bold;
+.search-ctn{
+	height: 200px;
+	border: 2px solid black;
 }
 
-button{
-  background-color: #002C77;
-  border-radius: 3px;
-  border: none;
-  font-weight: bold;
-  font-size: 12px;
-  color: white;
-  width: 140px;
-  height: 30px;
-  border-bottom: 2px solid #000138;
 
-}
 
-.pstrong{
-	font-size: 11px;
-	font-weight: bold;
-	margin-top: 5px;
-    line-height: 4px;
-}
 
-.pstrong a{
-  color: #157ab1;
-}
 
-.pstrong a:visited{
-  color:#10567b;
-}
+
+
+
+
+
+
 

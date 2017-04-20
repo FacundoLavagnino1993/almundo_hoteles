@@ -14,10 +14,15 @@
 
       function hotelsController(HotelsService) {
 
-          var self = this;
+          var _self = this;
 
         this.getHotelsInit = function (){
-          return HotelsService.getHotels();
+         /* HotelsService.getHotels().then(function done(response){
+              _self.hotels = response;
+          }, function fail(error){
+              console.log(error);
+         });*/
+            return HotelsService.getHotels();
         };
       }
 

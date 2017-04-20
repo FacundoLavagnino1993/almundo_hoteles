@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 .cluster
         .slider-ctn
                 slider(items="$ctrl.item.images")
         .details-ctn
+=======
+.hotels-ctn
+        .col-md-3.slider
+                slider(item="{{$ctrl.images}}")
+        .col-md-7.details
+>>>>>>> origin/master
                 p.name {{$ctrl.item.name}}
                 p.stars(ng-repeat=("star in $ctrl.stars() track by $index"))
                         <i class="fa fa-star" aria-hidden="true"></i>

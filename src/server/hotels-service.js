@@ -1,13 +1,12 @@
 'use strict';
 
-
-
 class hotelsService{
 
 
     static get() {
 
-        var hotelsList = [{
+        var _self = this;
+         _self.hotelsList = [{
             "_id": {
                 "$oid": "58cb47efe3dcd6c694f67533"
             },
@@ -32,14 +31,9 @@ class hotelsService{
             "image":"http://placehold.it/150/92c952"
         }];
 
-        return this.hotelsList;
+        return new Promise(function(resolve, reject){
+            resolve(_self.hotelsList);
+        })
     }
-
-
-
-
-
-
-
-
 }
+module.exports = hotelsService;

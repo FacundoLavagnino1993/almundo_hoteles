@@ -44,7 +44,7 @@
 
         }
 
-        /*this.getHotels = function (){
+       /* this.getHotels = function (){
             return $http.get('/hotels')
                 .then(function (response){
                     return response.data;

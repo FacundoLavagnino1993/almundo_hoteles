@@ -17,11 +17,13 @@
           var _self = this;
 
         this.getHotelsInit = function (){
+
          /* HotelsService.getHotels().then(function done(response){
               _self.hotels = response;
           }, function fail(error){
               console.log(error);
          });*/
+
             return HotelsService.getHotels();
         };
       }

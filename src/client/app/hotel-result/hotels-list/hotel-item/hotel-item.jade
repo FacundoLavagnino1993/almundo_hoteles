@@ -1,20 +1,13 @@
-<<<<<<< HEAD
 .cluster
         .slider-ctn
                 slider(items="$ctrl.item.images")
         .details-ctn
-=======
-.hotels-ctn
-        .col-md-3.slider
-                slider(item="{{$ctrl.images}}")
-        .col-md-7.details
->>>>>>> origin/master
                 p.name {{$ctrl.item.name}}
                 p.stars(ng-repeat=("star in $ctrl.stars() track by $index"))
                         <i class="fa fa-star" aria-hidden="true"></i>
                 p.description <i class="fa fa-bed" aria-hidden="true"></i> Solo la habitacion
                 ul
-                        li(ng-repeat="(key,value) in $ctrl.item.amenities" ng-class="$ctrl.getIcon(key)")
+                        li(ng-repeat="(key, value) in $ctrl.item.amenities" ng-class="$ctrl.getIcon(key)")
         .pricebox-ctn
                 p Precio por noche por habitacion
                 p.coin <span class="cointype">ARS</span> <span class="number">{{$ctrl.item.price}}</span>

@@ -1,6 +1,6 @@
-//'use strict';
+'use strict';
 
-var hotelsService = required('./hotels-service');
+const hotelsService = required('./hotels-service');
 
 class hotelsController{
 

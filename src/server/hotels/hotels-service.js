@@ -4,31 +4,35 @@
 
 class hotelsService{
 
+
     static get() {
 
         var hotelsList = [{
-            name: "Hotel Emperador",
-            stars: "3",
-            price: 1596.0,
-            image: "http://placehold.it/150/92c952"
-        }, {
-            name: "Petit Palace San Bernardo",
-            stars: "4",
-            price: 2145.0,
-            image: "http://placehold.it/150/92c952"
-        }, {
-            name: "Hotel Nuevo Boston",
-            stars: "2",
-            price: 861.0,
-            image: "http://placehold.it/150/92c952"
-        }, {
-            name: "Aquarius Casino Resort",
-            stars: "1",
-            price: 450.0,
-            image: "http://placehold.it/150/92c952"
+            "_id": {
+                "$oid": "58cb47efe3dcd6c694f67533"
+            },
+            "name": "Hotel Emperador",
+            "descrip": "Solo la habitación",
+            "stars": "3",
+            "price": 1.596,
+            "images": [
+                "//images.almundo.com/201/1000000/10000/1000/915/915_221_b.jpg",
+                "//images.almundo.com/201/1000000/10000/1000/915/915_207_b.jpg",
+                "//images.almundo.com/201/1000000/10000/1000/915/915_250_b.jpg"
+            ],
+            "amenities": {
+                "wifi": "wifi",
+                "tel": "telefono",
+                "sp": "Spa"
+            }
+        },{
+            "name":"Aquarius Casino Resort",
+            "stars":"1",
+            "price":450,
+            "image":"http://placehold.it/150/92c952"
         }];
 
-        return hotelsList;
+        return this.hotelsList;
     }
 
 

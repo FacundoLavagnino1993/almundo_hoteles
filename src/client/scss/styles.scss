@@ -1,20 +1,18 @@
-//@import "./font";
+@import "./font";
 @import "./slider";
 @import "./_hotel-list.scss";
 
 
 
 body {
-	background-color: lavender;
+	background-color: #f4f0f3;
     font-family: 'Roboto', sans-serif;
+	padding : 10px 10px;
 }
 
 ul{
 	list-style-type: none;
-	margin: 0px;
-	padding: 8px 0px;
-
-<<<<<<< HEAD
+	padding: 4px 0px;
 }
 
 .breadcrumb-ctn{
@@ -22,54 +20,28 @@ ul{
 	boder-color: black;
 	border: 2px solid black;
 }
+
+.search-ctn{
+  height: 100px;
+  border: 2px solid black;
+  width: 100%;
+}
+
 .filter-ctn{
 	height: 200px;
 	border-color: black;
 	border: 2px solid black;
-=======
-.row {
 	width: 100%;
-	//background-color: white;
-	//box-shadow: 0px 2px 4px 0px gray;
-	margin: 20px;
-    padding : 10px;
-    height: auto;
+	@media only screen and (min-width: 992px){
+		width: 25%;
+	}
 }
 
 .hotels-ctn{
-  width: 100%;
-  background-color: white;
-  box-shadow: 0px 2px 4px 0px gray;
-  margin: 20px;
-  padding : 10px;
-  height: auto;
+  background-color: red;
 }
 
 
-
-.slider{
-
-  position: relative;
-
-}
-
-.nav-ctn{
-  position: absolute;
-  width : 100%;
-  top: 50%
-}
-
-.details .name{
-	font-size: 16px;
-	font-weight: bold;
->>>>>>> origin/master
-}
-
-
-.search-ctn{
-	height: 200px;
-	border: 2px solid black;
-}
 
 
 

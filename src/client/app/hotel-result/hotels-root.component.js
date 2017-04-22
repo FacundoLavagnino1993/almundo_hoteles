@@ -16,20 +16,16 @@
 
           var _self = this;
 
-          this.getHotelsInit = function (){
+          this.$onInit = function(){
 
-        /*  HotelsService.getHotels()
-              .then(function done(response){
-                _self.hotels = response;
-                console.log(response);
-          }, function fail(error){
-              console.log(error);
-         });*/
-
-            return HotelsService.getHotels();
-          //return _self.hotels;
-        };
-
+              HotelsService.getHotels()
+                  .then(function done(res){
+                      _self.hotels = res;
+                  }, function error(error){
+                      console.log(error);
+                  });
+              return _self.hotels;
+          };
 
       }
 

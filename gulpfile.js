@@ -43,7 +43,18 @@ gulp.task('styles-app', () => {
         .pipe(gulp.dest(config.build));
 });
 
+/**
+ *  Compiling fonts into build
+ */
 
+ gulp.task('fonts-app', () => {
+
+     console.log("copy fonts in build...");
+     return gulp
+         .src(config.font)
+         .pipe(gulp.dest(config.build));
+
+ });
 /**
  * Concat vendor js files.
  */
@@ -77,7 +88,7 @@ gulp.task('scripts-app', ['compile-jade'], () => {
 });
 
 
-gulp.task('inject', ['styles-app', 'scripts-lib', 'scripts-app'], () => {
+gulp.task('inject', ['styles-app', 'scripts-lib', 'scripts-app', 'fonts-app'], () => {
 
     const series = require('stream-series');
     // It's not necessary to read the files (will speed up things), we're only after their paths:

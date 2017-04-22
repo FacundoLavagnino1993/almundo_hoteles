@@ -9,7 +9,7 @@ app.use('/static', express.static('./build'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 //API routes
-app.use('/hotels', require('./hotels-routes'));
+app.use('/', require('./hotels-server/hotels-routes'));
 
 //App Routes
 app.use('/',function (req, res, next) {

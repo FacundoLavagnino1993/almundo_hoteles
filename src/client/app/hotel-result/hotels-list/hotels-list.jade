@@ -1,5 +1,5 @@
 ul.container-fluid
-    li(ng-repeat='hotel in $ctrl.hotels')
+    li(ng-repeat='hotel in $ctrl.hotels track by $index')
         hotel-item(item='hotel')
         
         

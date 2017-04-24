@@ -8,11 +8,15 @@ body {
 	background-color: #f4f0f3;
     font-family: 'Roboto', sans-serif;
 	padding : 10px 10px;
+	min-width: 320px;
 }
 
 ul{
 	list-style-type: none;
-	padding: 4px 0px;
+	padding: 2px 2px;
+	.container-fluid{
+		padding-left: 2px;
+	}
 }
 
 .breadcrumb-ctn{
@@ -39,6 +43,8 @@ ul{
 
 .hotels-ctn{
   background-color: red;
+	padding: 2px 2px;
+
 }
 
 

@@ -5,7 +5,7 @@
 
 
 body {
-	background-color: #f4f0f3;
+	background-color: #F4F4F4;
     font-family: 'Roboto', sans-serif;
 	padding : 10px 10px;
 	min-width: 320px;
@@ -13,7 +13,8 @@ body {
 
 ul{
 	list-style-type: none;
-	padding: 2px 2px;
+	padding: 0px;
+	margin-top: 10px;
 	.container-fluid{
 		padding-left: 2px;
 	}
@@ -21,7 +22,6 @@ ul{
 
 .breadcrumb-ctn{
 	height: 20px;
-	boder-color: black;
 	border: 2px solid black;
 }
 
@@ -33,7 +33,6 @@ ul{
 
 .filter-ctn{
 	height: 200px;
-	border-color: black;
 	border: 2px solid black;
 	width: 100%;
 	@media only screen and (min-width: 992px){
@@ -42,8 +41,8 @@ ul{
 }
 
 .hotels-ctn{
-  background-color: red;
-	padding: 2px 2px;
+
+	padding: 30px 0px 0px 0px;
 
 }
 

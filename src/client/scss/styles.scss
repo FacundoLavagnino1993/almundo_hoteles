@@ -1,7 +1,7 @@
 @import "./font";
 @import "./slider";
-@import "./_hotel-list.scss";
-
+@import "./hotel-list.scss";
+@import "./search";
 
 
 body {
@@ -22,13 +22,8 @@ ul{
 
 .breadcrumb-ctn{
 	height: 20px;
-	border: 2px solid black;
-}
-
-.search-ctn{
-  height: 100px;
-  border: 2px solid black;
-  width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
 }
 
 .filter-ctn{

@@ -27,6 +27,9 @@
               return _self.hotels;
           };
 
+            this.$doCheck= function(){
+            console.log("hola");
+          }
       }
 
 })();

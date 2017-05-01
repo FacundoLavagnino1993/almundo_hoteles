@@ -1,0 +1,19 @@
+@import "filter-title/filter-title";
+@import "filter-name/filter-name";
+
+ul{
+  padding: 0px;
+  margin: 0px;
+}
+li{
+  padding: 0px;
+  margin: 0px;
+}
+
+.filter-box-style{
+  box-shadow: 0px 1px 3px 0px rgba(119, 119, 119, 0.3);
+  background-color: white;
+  padding:4px 0px 8px 2px;
+  margin-bottom: 10px;
+}
+

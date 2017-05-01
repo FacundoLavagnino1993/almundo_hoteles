@@ -2,7 +2,6 @@
 
   'use strict';
 
-
   angular
       .module('hotelsResult')
       .component('hotelsList', {

@@ -1,24 +1,19 @@
 @import "./font";
-@import "./slider";
-@import "./hotel-list.scss";
-@import "./search";
+@import "../app/slider/slider";
+@import "../app/hotel-result/hotels-list/hotel-list";
+@import "../app/hotel-result/search/search";
+@import "../app/hotel-result/filters/filters";
 
 
 body {
-	background-color: #F4F4F4;
+	background-color: #888888;
+	//background-color: #f4f4f4;
     font-family: 'Roboto', sans-serif;
-	padding : 10px 10px;
+	padding : 15px 15px;
 	min-width: 320px;
 }
 
-ul{
-	list-style-type: none;
-	padding: 0px;
-	margin-top: 10px;
-	.container-fluid{
-		padding-left: 2px;
-	}
-}
+
 
 .breadcrumb-ctn{
 	height: 20px;
@@ -27,8 +22,8 @@ ul{
 }
 
 .filter-ctn{
-	height: 200px;
-	border: 2px solid black;
+	padding: 0px;
+	height:100%;
 	width: 100%;
 	@media only screen and (min-width: 992px){
 		width: 25%;
@@ -36,7 +31,7 @@ ul{
 }
 
 .hotels-ctn{
-
+	position: relative;
 	padding: 30px 0px 0px 0px;
 
 }

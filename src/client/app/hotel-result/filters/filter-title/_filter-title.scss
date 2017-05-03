@@ -8,8 +8,15 @@
 .delete-filter{
   float: right;
   color: #157ab1;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
   padding-top: 5px;
+}
+.delete-filter:hover{
+  text-decoration: underline;
+}
+
+.fa-times{
+  font-weight: lighter;
 }

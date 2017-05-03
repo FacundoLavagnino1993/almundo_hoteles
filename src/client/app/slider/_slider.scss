@@ -9,13 +9,14 @@
     li{
 
       .hotel-image{
-
         position: relative;
         margin-top: 8px;
         overflow: hidden;
         background-position: 50%;
         height: 195px;
         padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
 
       }
     }

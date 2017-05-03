@@ -4,4 +4,5 @@
         .filter-name.col-md-8.col-sm-8.col-xs-8  Precio por noche
         .filter-display-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-sort-asc" aria-hidden="true" ng-click="filtershow=!filtershow"></i>
     .filter-input(ng-show="filtershow")
-        input(type="range" name="price" min='0' max='10')
+        .range
+            input(type="range" name="price" min='0' max='10')

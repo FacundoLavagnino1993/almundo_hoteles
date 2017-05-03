@@ -27,6 +27,23 @@
               return _self.hotels;
           };
 
+            this.filters = {
+                "name" : " ",
+                "searchName" : " ",
+                "price" : {
+                    "priceMin" : 200,
+                    "priceMax" : 4000,
+                },
+                "stars" : {
+                    "allStars" : true,
+                    "five" : false,
+                    "four" : false,
+                    "three" : false,
+                    "two" : false,
+                    "one" : false
+                }
+            };
+
             this.$doCheck= function(){
             console.log("hola");
           }

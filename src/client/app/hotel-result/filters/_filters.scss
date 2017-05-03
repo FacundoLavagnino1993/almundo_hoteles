@@ -1,6 +1,6 @@
 @import "filter-title/filter-title";
 @import "filter-name/filter-name";
-
+@import "filter-price/filter-price";
 ul{
   padding: 0px;
   margin: 0px;
@@ -8,6 +8,7 @@ ul{
 li{
   padding: 0px;
   margin: 0px;
+  margin-top: 5px;
 }
 
 .filter-box-style{

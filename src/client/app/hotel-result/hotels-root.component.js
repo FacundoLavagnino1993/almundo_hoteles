@@ -29,18 +29,16 @@
 
               this.filters = {
                   "name" : " ",
-                  "searchName" : " ",
                   "price" : {
                       "priceMin" : 200,
                       "priceMax" : 4000
                   },
                   "stars" : {
-                      "allStars" : true,
-                      "five" : false,
-                      "four" : false,
-                      "three" : false,
-                      "two" : false,
-                      "one" : false
+                      "5" : true,
+                      "4" : false,
+                      "3" : false,
+                      "2" : false,
+                      "1" : false
                   }
               };
 
@@ -54,10 +52,6 @@
 
               return _self.hotels;
           };
-
-
-
-
 
             this.$doCheck= function(){
             console.log("hola");

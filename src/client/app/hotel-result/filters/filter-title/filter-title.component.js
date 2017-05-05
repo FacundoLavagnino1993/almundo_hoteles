@@ -6,7 +6,8 @@
         .component('filterTitle',{
             controller: deleteFilterController,
             require: {
-                hotelsController : '^hotelsRoot'
+                hotelsController : '^hotelsRoot',
+                filtersController : '^filters'
             },
             templateUrl: "hotel-result/filters/filter-title/filter-title.html"
         });
@@ -15,7 +16,8 @@
 
        this.deleteFilter = function(){
 
-           this.hotelsController.hotels =  this.hotelsController.hotelsBackup();
+           this.filtersController.resetFilters();
+
        }
 
 

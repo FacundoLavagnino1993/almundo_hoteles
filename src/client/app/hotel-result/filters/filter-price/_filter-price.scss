@@ -1,6 +1,36 @@
-.range{
+.filter-input{
 
   input{
-    width: 100%;
+    //width: 100%;
   }
+  .rzslider {
+    .rz-pointer {
+      background-color: white;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: gray;
+      border-radius: 5px;
+      width: 12px;
+      content: "";
+    }
+    .rz-pointer-min::after{
+      display: none;
+    }
+    .rz-pointer-max::after{
+      display: none;
+    }
+    .rz-limit{
+      display: none;
+    }
+    .rz-bar{
+      height: 8px;
+    }
+    .rz-selection{
+      background: gray;
+    }
+    .rz-bubble.rz-limit {
+      color: snow;
+    }
+  }
+
 }

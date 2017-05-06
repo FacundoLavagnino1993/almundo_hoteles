@@ -15,7 +15,7 @@
         });
 
         function filtersController(){
-
+            
             this.resetFilters = function() {
                 this.hotelsController.$onInit();
                 console.log("filter reset ok");

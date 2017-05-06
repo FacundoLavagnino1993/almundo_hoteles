@@ -13,7 +13,7 @@ class hotelsService{
             "name": "Hotel Emperador",
             "descrip": "Solo la habitación",
             "stars": "3",
-            "price": 1.596,
+            "price": 1596,
             "images": [
                 "//images.almundo.com/201/1000000/10000/1000/915/915_221_b.jpg",
                 "//images.almundo.com/201/1000000/10000/1000/915/915_207_b.jpg",
@@ -31,7 +31,7 @@ class hotelsService{
              "name": "Petit Palace San Bernardo",
              "descrip": "Solo la habitación",
              "stars": "4",
-             "price": 2.145,
+             "price": 2145,
              "images": [
                  "https://images.almundo.com/201/1000000/10000/6300/6260/6b25e36d_b.jpg",
                  "https://images.almundo.com/201/1000000/10000/4200/4164/675037ae_b.jpg",

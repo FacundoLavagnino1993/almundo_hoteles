@@ -27,7 +27,7 @@
                       console.log(error);
                   });
 
-              this.filters = {
+              _self.filters = {
                   "name" : " ",
                   "price" : {
                       "priceMin" : 200,

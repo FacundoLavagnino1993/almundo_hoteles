@@ -15,14 +15,14 @@
       function hotelsController(HotelsService) {
 
           var _self = this;
-
+          _self.hotelsFiltered = [];
 
           this.$onInit = function(){
 
               HotelsService.getHotels()
                   .then(function done(res){
                       _self.hotels = res;
-
+                      _self.hotelsFiltered = res;
                   }, function error(error){
                       console.log(error);
                   });
@@ -34,7 +34,8 @@
                       "priceMin" : 200,
                       "priceMax" : 4000
                   },
-                  "stars" : {
+                  "stars" : [],
+                  "starsCheck" : {
                       "5" : true,
                       "4" : false,
                       "3" : false,

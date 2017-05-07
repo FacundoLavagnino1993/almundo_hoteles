@@ -1,5 +1,5 @@
 ul.container-fluid.hotel-container
-    li(ng-repeat='hotel in $ctrl.hotels |filterPrice:$ctrl.hotels:$ctrl.filters.price track by $index')
+    li(ng-repeat='hotel in $ctrl.hotels |filterPrice:($ctrl.filters.price) track by $index')
         hotel-item(item='hotel')
         
         

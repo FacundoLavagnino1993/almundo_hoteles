@@ -1,6 +1,8 @@
 @import "filter-title/filter-title";
 @import "filter-name/filter-name";
 @import "filter-price/filter-price";
+@import "filter-star/filter-star";
+
 ul{
   padding: 0px;
   margin: 0px;
@@ -16,5 +18,10 @@ li{
   background-color: white;
   padding:4px 0px 8px 2px;
   margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#filter-box-price{
+  height: 115px;
 }
 

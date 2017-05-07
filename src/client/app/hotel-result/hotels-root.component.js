@@ -29,6 +29,7 @@
 
               _self.filters = {
                   "name" : " ",
+                  "nameFilter" : " ",
                   "price" : {
                       "priceMin" : 200,
                       "priceMax" : 4000

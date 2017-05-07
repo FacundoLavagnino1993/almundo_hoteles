@@ -4,5 +4,5 @@
         .filter-name.col-md-8.col-sm-8.col-xs-8  Nombre de hotel
         .filter-display-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-sort-asc" aria-hidden="true" ng-click="filtershow=!filtershow"></i>
     .filter-input(ng-show="filtershow")
-        input(type="text" ng-model="$ctrl.nameFilter" placeholder="Ingrese el nombre del hotel")
-        button(ng-click="$ctrl.filterHotel()" type="buttom") Aceptar
+        input.name(type="text" ng-model="$ctrl.filters.name" placeholder="Ingrese el nombre del hotel")
+        button(ng-click="$ctrl.filterHotel()" type="button") Aceptar

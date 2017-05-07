@@ -28,6 +28,11 @@
     .rz-selection{
       background: gray;
     }
+    .rz-bubble{
+      bottom: -40px;
+      font-weight: bold;
+      content: '<b>$</b>';
+    }
     .rz-bubble.rz-limit {
       color: snow;
     }

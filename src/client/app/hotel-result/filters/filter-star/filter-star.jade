@@ -3,10 +3,6 @@
         .filter-star-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-star" aria-hidden="true"></i>
         .filter-name.col-md-8.col-sm-8.col-xs-8  Estrellas
         .filter-display-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-sort-asc" aria-hidden="true" ng-click="filtershow=!filtershow"></i>
-    input.check-stars(type='checkbox' ng-click="$ctrl.allStars()")
-    label.all-stars Todas las estrellas
-    .check-ctn(ng-repeat=("stars in $ctrl.filterStars | orderBy:'number':true "))
-        input.check-stars(type='checkbox' ng-click="$ctrl.filterByStars(stars)" )
-        label.stars-ctn
-            span.star(ng-repeat=("star in $ctrl.numberStars(item) track by $index"))
-                <i class="fa fa-star" aria-hidden="true"></i>
+    #input-star.filter-input(ng-show="filtershow")
+        input.check-stars(type="checkbox" ng-click="$ctrl.allStars()")
+        span.all-stars Todas las estrellas

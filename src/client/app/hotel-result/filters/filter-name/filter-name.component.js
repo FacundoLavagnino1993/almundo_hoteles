@@ -7,22 +7,21 @@
             bindings: {
                 filters : '<'
             },
-            require: {
-                hotelsController : '^hotelsRoot'
-            },
-            templateUrl: "hotel-result/filters/filter-name/filter-name.html"
+            templateUrl: "hotel-result/filters/filter-name/filter-name.html"})
+        .filter('filterName',function(){
+                return function(hotels,nameFilter){
+                    if(hotels){
+                        return hotels.filter(function(hotel){
+                            return hotel.name.toLowerCase().indexOf(nameFilter.toLowerCase()) != -1;
+                        })
+                    }
+                }
         });
 
     function filterNameController(){
-        var _self = this;
 
         this.filterHotel = function(){
-            var hotels = this.hotelsController.hotels;
-            var hotelsFiltred = hotels.filter(function (hotel) {
-                return hotel.name.toLowerCase().indexOf(_self.nameFilter) != -1;
-            });
-
-            this.hotelsController.hotels = hotelsFiltred;
+            this.filters.nameFilter = this.filters.name;
         }
     }
 })();

@@ -2,13 +2,14 @@
   font-weight:bold;
   padding-left: 10px;
   padding-bottom: 5px;
+  position: absolute;
 }
 
 #input-star{
   margin-top: 20px;
   margin-left: 15px;
   padding: 20px 0 0 0;
-  vertical-align: super;
+
 }
 .check-ctn{
   margin-top: -8px;
@@ -18,7 +19,9 @@
 }
 .stars-ctn{
   display: inline-flex;
+  position: absolute;
   color:#FDBA12;
+  padding-left: 5px;
   .fa-star{
     padding-left: 3px;
   }

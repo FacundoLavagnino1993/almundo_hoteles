@@ -7,13 +7,49 @@ class hotelsService{
 
         var _self = this;
          _self.hotelsList = [{
+             "_id": {
+                 "$oid": "58cb47efe3dcd6c694f67533"
+             },
+             "name": "Petit Palace Embassy Serrano",
+             "descrip": "Solo la habitación",
+             "stars": "4",
+             "price": 2794,
+             "images": [
+                 "//images.almundo.com/201/2000000/1170000/1164100/1164028/d78b28b9_b.jpg",
+                 "//images.almundo.com/201/2000000/1170000/1164100/1164028/5dcbe3a2_b.jpg",
+                 "//images.almundo.com/201/2000000/1170000/1164100/1164028/1164028_166_b.jpg"
+             ],
+             "amenities": {
+                 "wifi": "wifi",
+                 "tel": "telefono",
+                 "sp": "Spa"
+             }
+         },{
+             "_id": {
+                 "$oid": "58cb47efe3dcd6c694f67533"
+             },
+             "name": "Hostal Numancia",
+             "descrip": "Solo la habitación",
+             "stars": "1",
+             "price": 1697,
+             "images": [
+                 "//images.almundo.com/201/5000000/4340000/4335400/4335399/4335399_54_b.jpg",
+                 "//images.almundo.com/201/5000000/4340000/4335400/4335399/73190988_b.jpg",
+                 "//images.almundo.com/201/5000000/4340000/4335400/4335399/4335399_5_b.jpg"
+             ],
+             "amenities": {
+                 "wifi": "wifi",
+                 "tel": "telefono",
+                 "sp": "Spa"
+             }
+         },{
             "_id": {
                 "$oid": "58cb47efe3dcd6c694f67533"
             },
             "name": "Hotel Emperador",
             "descrip": "Solo la habitación",
             "stars": "3",
-            "price": 1596,
+            "price": 3138,
             "images": [
                 "//images.almundo.com/201/1000000/10000/1000/915/915_221_b.jpg",
                 "//images.almundo.com/201/1000000/10000/1000/915/915_207_b.jpg",
@@ -49,11 +85,29 @@ class hotelsService{
              "name": "Hotel Nuevo Boston",
              "descrip": "Solo la habitación",
              "stars": "2",
-             "price": 861,
+             "price": 1256,
              "images": [
                  "//images.almundo.com/201/1000000/10000/1000/915/915_221_b.jpg",
                  "//images.almundo.com/201/1000000/10000/1000/915/915_207_b.jpg",
                  "//images.almundo.com/201/1000000/10000/1000/915/915_250_b.jpg"
+             ],
+             "amenities": {
+                 "wifi": "wifi",
+                 "tel": "telefono",
+                 "sp": "Spa"
+             }
+         },{
+             "_id": {
+                 "$oid": "58cb47efe3dcd6c694f67533"
+             },
+             "name": "Gran Melia Palacio de los Duques",
+             "descrip": "Solo la habitación",
+             "stars": "5",
+             "price": 5072,
+             "images": [
+                 "//images.almundo.com/201/1000000/10000/8600/8556/8556_263_b.jpg",
+                 "//images.almundo.com/201/1000000/10000/8600/8556/8556_266_b.jpg",
+                 "//images.almundo.com/201/1000000/10000/8600/8556/8556_313_b.jpg"
              ],
              "amenities": {
                  "wifi": "wifi",

@@ -1,8 +1,7 @@
+#filter-input-price{
+  height:95px;
+}
 .filter-input{
-
-  input{
-    //width: 100%;
-  }
   .rzslider {
     .rz-pointer {
       background-color: white;
@@ -11,7 +10,7 @@
       border-color: gray;
       border-radius: 5px;
       width: 12px;
-      content: "";
+      content: "$";
     }
     .rz-pointer-min::after{
       display: none;

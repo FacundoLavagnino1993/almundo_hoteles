@@ -29,11 +29,11 @@
                   });
 
               _self.filters = {
-                  "name" : " ",
-                  "nameFilter" : " ",
+                  "name" : "",
+                  "nameFilter" : "",
                   "price" : {
                       "priceMin" : 200,
-                      "priceMax" : 4000
+                      "priceMax" : 7000
                   },
                   "stars" : [],
                   "starsCheck" : {

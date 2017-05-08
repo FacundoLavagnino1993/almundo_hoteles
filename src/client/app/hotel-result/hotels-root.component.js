@@ -23,6 +23,7 @@
                   .then(function done(res){
                       _self.hotels = res;
                       _self.hotelsFiltered = res;
+
                   }, function error(error){
                       console.log(error);
                   });
@@ -36,7 +37,7 @@
                   },
                   "stars" : [],
                   "starsCheck" : {
-                      "5" : true,
+                      "5" : false,
                       "4" : false,
                       "3" : false,
                       "2" : false,

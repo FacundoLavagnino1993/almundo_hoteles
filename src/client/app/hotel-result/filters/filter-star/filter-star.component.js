@@ -16,7 +16,7 @@
                 if(hotels){
                     return hotels.filter(function (hotel){
                         if(stars.length == 0){
-                            return;
+                            return hotels;
                         }else{
                             return stars.indexOf(hotel.stars)>-1;
                         }
@@ -39,14 +39,21 @@
             return Array(parseInt(number));
         };
 
-        this.allStars = function(){
-            this.hotelsController.hotels = this.hotelsController.hotelsFiltered;
-        };
 
         this.filterByStars = function(star){
+
             if(this.filters.stars.indexOf(star)>-1){
+                //debugger;
+                //dischecked
+                if(document.getElementById("starsFiltered").checked ==false){
+                    document.getElementById("allStars").checked = true;
+                }
+
                 this.filters.stars.splice(this.filters.stars.indexOf(star),1);
             }else{
+                //debugger;
+                //checked
+                document.getElementById("allStars").checked = false;
                 this.filters.stars.push(star);
             }
         };

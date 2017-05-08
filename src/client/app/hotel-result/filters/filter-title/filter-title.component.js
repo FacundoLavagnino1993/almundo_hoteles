@@ -18,6 +18,7 @@
 
            this.filtersController.resetFilters();
 
+
        }
 
 

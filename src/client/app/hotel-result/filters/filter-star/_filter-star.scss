@@ -4,13 +4,23 @@
   padding-bottom: 5px;
 }
 
-
-
-
 #input-star{
   margin-top: 20px;
   margin-left: 15px;
   padding: 20px 0 0 0;
   vertical-align: super;
+}
+.check-ctn{
+  margin-top: -8px;
+  margin-left: 15px;
+  padding: 20px 0 0 0;
+  vertical-align: super;
+}
+.stars-ctn{
+  display: inline-flex;
+  color:#FDBA12;
+  .fa-star{
+    padding-left: 3px;
+  }
 
 }

@@ -18,7 +18,9 @@
             
             this.resetFilters = function() {
                 this.hotelsController.$onInit();
-                console.log("filter reset ok");
+                document.getElementsByTagName("starsFiltered").checked = false;
+                document.getElementById("allStars").checked = true;
+
             }
 
         }

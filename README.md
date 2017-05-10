@@ -1,51 +1,18 @@
-Ejercicio resultado de hoteles
+##### _Hotels App By FacundoLavagnino 10/5/2017_
 
-<<<<<<< HEAD
-Ejercicio resultado de hoteles
+#almundo_hotels App
 
-.container-fuid main.row div.breadcrumb-ctn div.search-ctn div.filter-ctn div.hotels-ctn (hotels-root)
-=======
-.container-fuid
-    main.row
-        div.breadcrumb-ctn
-        div.search-ctn
-        div.filter-ctn
-        div.hotels-ctn (hotels-root)
+##Pasos para correr la aplicacion
 
->>>>>>> origin/master
+1.**[Descargar la app del Git](https://github.com/FacundoLavagnino1993/almundo_hoteles/tree/master)**
+2.Ubicarse en la raiz del proyecto e instalar las dependecias
+***npm install***
+***bower install***
+3.Luego en la misma consola corre ***gulp*** para levantar el server.
+4.En el navegador que utilices ingresa a la _url_[localhost](localhost:8080)
 
--- TAREA --
+***Enjoy!***
 
-*Pasar datos al server.
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
-*Modificar componente de cluster, cambiar grilla bootstrap por sass mixins utilizando width (%) en cada una de las tres columnas
 
-*Hacer que el build cree carpetas para el css, y js para mantener el orden
-
-<<<<<<< HEAD
-*Crear fuente para iconos del cluster. Utilizar paquete de am-amenities.ttf (ubicacion Hipchat) Sass con las class de las fuentes en Hipchat.
-
-*Mapeo para insertar iconos.
-
-this.getIcon = function(key){ var icons = { wifi: "class wifi"}
-
-return icons(key);
-}
-=======
-*Crear fuente para iconos del cluster. Utilizar paquete de am-amenities.ttf (ubicacion Hipchat)
-Sass con las class de las fuentes en Hipchat.
-
-*Mapeo para insertar iconos.
-
-this.getIcon = function(key){
-var icons = {
-    wifi: "class wifi"}
-
-    return icons(key);
-}
-
->>>>>>> origin/master

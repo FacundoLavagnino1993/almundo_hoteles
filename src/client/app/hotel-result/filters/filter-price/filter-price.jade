@@ -1,8 +1,8 @@
-.filter-box-style.container-fluid(ng-init="filtershow=true")
+.filter-box-style.container-fluid(ng-init="showPrice=true")
     .filter-header
-        .filter-price-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-usd" aria-hidden="true"></i>
-        .filter-name.col-md-8.col-sm-8.col-xs-8  Precio por noche
-        .filter-display-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-sort-asc" aria-hidden="true" ng-click="filtershow=!filtershow"></i>
-    #filter-input-price.filter-input(ng-show="filtershow")
+        .filter-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-usd" aria-hidden="true"></i>
+        .filter-label.col-md-8.col-sm-8.col-xs-8  Precio por noche
+        .filter-display.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-sort-asc" aria-hidden="true" ng-click="showPrice=!showPrice"></i>
+    #filter-input-price.filter-input(ng-show="showPrice")
         rzslider(rz-slider-model='$ctrl.filters.price.priceMin', rz-slider-high='$ctrl.filters.price.priceMax', rz-slider-options='$ctrl.slider.options') $
 

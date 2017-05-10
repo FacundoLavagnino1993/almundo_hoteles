@@ -1,12 +1,12 @@
-.filter-box-style.container-fluid(ng-init="filtershow=true")
+.filter-box-style.container-fluid(ng-init="showStar=true")
     .filter-header
-        .filter-star-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-star" aria-hidden="true"></i>
-        .filter-name.col-md-8.col-sm-8.col-xs-8  Estrellas
-        .filter-display-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-sort-asc" aria-hidden="true" ng-click="filtershow=!filtershow"></i>
-    #input-star.filter-input(ng-show="filtershow")
+        .filter-icon.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-star" aria-hidden="true"></i>
+        .filter-label.col-md-8.col-sm-8.col-xs-8  Estrellas
+        .filter-display.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-sort-asc" aria-hidden="true" ng-click="filtershow=!filtershow"></i>
+    #input-star.filter-input(ng-show="showStar")
         input.check-stars(type="checkbox" id="allStars" checked disabled)
         span.all-stars Todas las estrellas
-    .check-ctn(ng-repeat=("star in $ctrl.filterStars | orderBy:'number':true") ng-show="filtershow")
+    .check-ctn(ng-repeat=("star in $ctrl.filterStars | orderBy:'number':true") ng-show="showStar")
         input.check-stars(type="checkbox" name="starsFiltered" ng-click="$ctrl.filterByStars(star)" ng-checked="$ctrl.filters.starsCheck.star")
         .stars-ctn
             .star(ng-repeat=("oneStar in $ctrl.numberStars(star) track by $index"))

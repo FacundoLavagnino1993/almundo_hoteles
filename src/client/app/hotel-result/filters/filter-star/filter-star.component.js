@@ -45,9 +45,9 @@
             if(this.filters.stars.indexOf(star)>-1){
                 //debugger;
                 //dischecked
-                if(document.getElementsByTagName("starsFiltered").checked ==false){
+              /*  if(document.getElementsByTagName("starsFiltered").checked ==false){
                     document.getElementById("allStars").checked = true;
-                }
+                }*/
 
                 this.filters.stars.splice(this.filters.stars.indexOf(star),1);
             }else{

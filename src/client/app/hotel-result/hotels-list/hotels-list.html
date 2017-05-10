@@ -1,1 +1,1 @@
-<ul class="container-fluid hotel-container"><li ng-repeat="hotel in $ctrl.hotels |filterPrice:($ctrl.filters.price)|filterName:($ctrl.filters.name)|filterStar:($ctrl.filters.stars) track by $index"><hotel-item item="hotel"></hotel-item></li></ul>
+<ul class="container-fluid hotel-container"><li ng-repeat="hotel in $ctrl.hotels |filterPrice:($ctrl.filters.price)|filterName:($ctrl.filters.nameFilter)|filterStar:($ctrl.filters.stars) track by $index"><hotel-item item="hotel"></hotel-item></li></ul>

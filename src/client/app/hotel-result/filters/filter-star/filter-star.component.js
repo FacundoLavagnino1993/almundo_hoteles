@@ -13,6 +13,7 @@
             templateUrl:"hotel-result/filters/filter-star/filter-star.html"
         }).filter('filterStar',function(){
             return function (hotels,stars) {
+
                 if(hotels){
                     return hotels.filter(function (hotel){
                         if(stars.length == 0){
@@ -28,32 +29,31 @@
 
     function filterStarController(){
 
+        var _self = this;
 
         this.filterStars = ["1","2","3","4","5"];
 
-        this.check = function(stars){
-            return this.starsCheck.stars;
-        };
+
 
         this.numberStars = function(number){
             return Array(parseInt(number));
         };
 
+        this.allStars = function() {
+            _self.filters.stars = [];
+
+            for(var i=1; i < _self.filters.starsCheck.length ; i++){
+                _self.filters.starsCheck[i] = false;
+            }
+        };
 
         this.filterByStars = function(star){
 
-            if(this.filters.stars.indexOf(star)>-1){
-                //debugger;
-                //dischecked
-              /*  if(document.getElementsByTagName("starsFiltered").checked ==false){
-                    document.getElementById("allStars").checked = true;
-                }*/
+            _self.filters.starsCheck[0] = false;
 
+            if(this.filters.stars.indexOf(star)>-1){
                 this.filters.stars.splice(this.filters.stars.indexOf(star),1);
             }else{
-                //debugger;
-                //checked
-                document.getElementById("allStars").checked = false;
                 this.filters.stars.push(star);
             }
         };

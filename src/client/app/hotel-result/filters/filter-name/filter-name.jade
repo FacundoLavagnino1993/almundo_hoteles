@@ -5,4 +5,4 @@
         .filter-display.col-md-2.col-sm-2.col-xs-2 <i class="fa fa-sort-asc" aria-hidden="true" ng-click="showName=!showName"></i>
     .filter-input(ng-show="showName")
         input.name(type="text" ng-model="$ctrl.filters.name" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()" placeholder="Ingrese el nombre del hotel")
-        button(ng-click="$ctrl.filterName()" id="btnSearch" type="button") Aceptar
+        button(ng-click="$ctrl.filterHotel()" id="btnSearch" type="button") Aceptar

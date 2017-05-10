@@ -9,7 +9,7 @@
             },
             templateUrl: "hotel-result/filters/filter-name/filter-name.html"})
         .filter('filterName',function(){
-                debugger;
+
                 return function(hotels,nameFilter){
                     if(hotels){
                         return hotels.filter(function(hotel){

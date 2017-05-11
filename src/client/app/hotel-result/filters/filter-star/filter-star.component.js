@@ -40,16 +40,33 @@
         };
 
         this.allStars = function() {
-            _self.filters.stars = [];
 
-            for(var i=1; i < _self.filters.starsCheck.length ; i++){
-                _self.filters.starsCheck[i] = false;
-            }
+            _self.filters.stars = [];
+            _self.filters.starsCheck[1]=false;
         };
 
         this.filterByStars = function(star){
 
-            _self.filters.starsCheck[0] = false;
+
+            let check = _self.filters.starsCheck;
+
+            check[star] = true;
+            debugger;
+            if((check[1]) || (check[2]) || (check[3]) || (check[4]) || (check[5]))
+            {
+                check[0] = false;
+
+            }
+
+            if(!(check[1]) && !(check[2]) && !(check[3]) && !(check[4]) && !(check[5]))
+            {
+                check[0] = true;
+                check[1] = false;
+                 check[2] = false;
+                 check[3] = false;
+                 check[4] = false;
+                 check[5] = false;
+            }
 
             if(this.filters.stars.indexOf(star)>-1){
                 this.filters.stars.splice(this.filters.stars.indexOf(star),1);
@@ -60,3 +77,8 @@
     }
 
 })();
+
+//Usar this.numberStars para mostrar dinamicamente el filtro de estrellas.
+//Si es posible en la misma funcion hacer logica para mostrar cantidad de hoteles disponibles x star.
+//Hacer header full
+//Revisar bug en slider.

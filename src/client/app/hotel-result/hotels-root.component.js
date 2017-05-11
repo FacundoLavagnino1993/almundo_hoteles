@@ -36,14 +36,6 @@
                       "priceMax" : 7000
                   },
                   "stars" : [],
-                 /* "starsCheck" : {
-                      "allStars": true,
-                      "5" : false,
-                      "4" : false,
-                      "3" : false,
-                      "2" : false,
-                      "1" : false
-                  }*/
                   "starsCheck": [true,false,false,false,false,false]
               };
 

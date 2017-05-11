@@ -42,7 +42,15 @@
         this.allStars = function() {
 
             _self.filters.stars = [];
-            _self.filters.starsCheck[1]=false;
+            let check =  _self.filters.starsCheck;
+            check[0]=true;
+            check[1]=false;
+            check[2]=false;
+            check[3]=false;
+            check[4]=false;
+            check[5]=false;
+
+
         };
 
         this.filterByStars = function(star){
@@ -51,21 +59,12 @@
             let check = _self.filters.starsCheck;
 
             check[star] = true;
-            debugger;
-            if((check[1]) || (check[2]) || (check[3]) || (check[4]) || (check[5]))
-            {
-                check[0] = false;
+            check[0] = false;
 
-            }
-
-            if(!(check[1]) && !(check[2]) && !(check[3]) && !(check[4]) && !(check[5]))
-            {
-                check[0] = true;
-                check[1] = false;
-                 check[2] = false;
-                 check[3] = false;
-                 check[4] = false;
-                 check[5] = false;
+            if((check[1]) && (check[2]) && (check[3]) && (check[4]) && (check[5]))
+            {debugger;
+                _self.allStars();
+                check[star] = false;
             }
 
             if(this.filters.stars.indexOf(star)>-1){

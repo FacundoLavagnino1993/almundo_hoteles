@@ -8,7 +8,7 @@
         span.all-stars.count-hotels  Todas las estrellas  ({{$ctrl.filters.numberHotels[0]}})
 
     .check-ctn(ng-repeat=("star in $ctrl.filterStars | orderBy:'number':true") ng-show="showStar")
-        input.check-stars(type="checkbox" name="starsFiltered" ng-click="$ctrl.filterByStars(star)" ng-checked="$ctrl.filters.starsCheck[star]")
+        input.check-stars(type="checkbox" name="starsFiltered" ng-click="$ctrl.filterByStars(star)" ng-model="$ctrl.filters.starsCheck[star]")
         .stars-ctn
             .star(ng-repeat=("oneStar in $ctrl.numberStars(star) track by $index"))
                 <i class="fa fa-star" aria-hidden="true"></i>

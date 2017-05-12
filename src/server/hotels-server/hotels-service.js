@@ -7,9 +7,7 @@ class hotelsService{
 
         var _self = this;
          _self.hotelsList = [{
-             "_id": {
-                 "$oid": "58cb47efe3dcd6c694f67533"
-             },
+             "_id": 120,
              "name": "Petit Palace Embassy Serrano",
              "descrip": "Solo la habitación",
              "stars": "4",
@@ -25,9 +23,7 @@ class hotelsService{
                  "sp": "Spa"
              }
          },{
-             "_id": {
-                 "$oid": "58cb47efe3dcd6c694f67533"
-             },
+             "_id": 221,
              "name": "Hostal Numancia",
              "descrip": "Solo la habitación",
              "stars": "1",
@@ -43,9 +39,7 @@ class hotelsService{
                  "sp": "Spa"
              }
          },{
-            "_id": {
-                "$oid": "58cb47efe3dcd6c694f67533"
-            },
+            "_id": 350,
             "name": "Hotel Emperador",
             "descrip": "Solo la habitación",
             "stars": "3",
@@ -61,9 +55,7 @@ class hotelsService{
                 "sp": "Spa"
             }
         },{
-             "_id": {
-                 "$oid": "58cb47efe3dcd6c694f67533"
-             },
+             "_id": 550,
              "name": "Petit Palace San Bernardo",
              "descrip": "Solo la habitación",
              "stars": "4",
@@ -79,9 +71,7 @@ class hotelsService{
                  "sp": "Spa"
              }
          },{
-             "_id": {
-                 "$oid": "58cb47efe3dcd6c694f67533"
-             },
+             "_id": 650,
              "name": "Hotel Nuevo Boston",
              "descrip": "Solo la habitación",
              "stars": "2",
@@ -97,9 +87,7 @@ class hotelsService{
                  "sp": "Spa"
              }
          },{
-             "_id": {
-                 "$oid": "58cb47efe3dcd6c694f67533"
-             },
+             "_id": 144,
              "name": "Gran Melia Palacio de los Duques",
              "descrip": "Solo la habitación",
              "stars": "5",

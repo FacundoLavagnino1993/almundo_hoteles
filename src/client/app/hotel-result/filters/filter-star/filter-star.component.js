@@ -34,8 +34,6 @@
 
         this.filterStars = ["1","2","3","4","5"];
 
-
-
         this.numberStars = function(number){
             return Array(parseInt(number));
         };
@@ -50,30 +48,38 @@
             check[3]=false;
             check[4]=false;
             check[5]=false;
-
-
         };
 
 
         this.filterByStars = function(star){
 
-
             let check = _self.filters.starsCheck;
 
-            check[star] = true;
+            //check[star] = true;
             check[0] = false;
 
-            if((check[1]) && (check[2]) && (check[3]) && (check[4]) && (check[5]))
-            {debugger;
+
+            if((check[1]) && (check[2]) && (check[3]) && (check[4]) && (check[5])){
+
                 _self.allStars();
-                check[star] = false;
+                return;
             }
+
+
+
+            if(!(check[1]) && !(check[2]) && !(check[3]) && !(check[4]) && !(check[5])){
+                _self.allStars();
+                return;
+            }
+
+
 
             if(this.filters.stars.indexOf(star)>-1){
                 this.filters.stars.splice(this.filters.stars.indexOf(star),1);
             }else{
                 this.filters.stars.push(star);
             }
+
         };
     }
 

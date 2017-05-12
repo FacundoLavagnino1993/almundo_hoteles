@@ -36,7 +36,7 @@
                   },
                   "stars" : [],
                   "starsCheck": [true,false,false,false,false,false],
-                  "numberHotels": ["6","1","2","1","1","1"]
+                  "numberHotels": ["6","1","1","1","2","1"]
               };
 
               this.hotelsBackup = function(){
@@ -50,9 +50,6 @@
               return _self.hotels;
           };
 
-            this.$doCheck= function(){
-            console.log("hola");
-          }
       }
 
 })();

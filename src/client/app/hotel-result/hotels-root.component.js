@@ -23,7 +23,6 @@
                   .then(function done(res){
                       _self.hotels = res;
                       _self.hotelsFiltered = res;
-
                   }, function error(error){
                       console.log(error);
                   });
@@ -36,7 +35,8 @@
                       "priceMax" : 7000
                   },
                   "stars" : [],
-                  "starsCheck": [true,false,false,false,false,false]
+                  "starsCheck": [true,false,false,false,false,false],
+                  "numberHotels": ["6","1","2","1","1","1"]
               };
 
               this.hotelsBackup = function(){
@@ -46,7 +46,7 @@
                           _self.hotels = res;
                       })
               };
-
+                
               return _self.hotels;
           };
 

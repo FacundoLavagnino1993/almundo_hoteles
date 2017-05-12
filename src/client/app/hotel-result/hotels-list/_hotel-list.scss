@@ -8,11 +8,36 @@ ul{
 }
 
 .hotel-container{
+  margin-top: -26px;
   margin-right: 0px;
   padding: 0;
   @media only screen and (min-width: 992px){
     margin-left: 10px;
   }
+}
+.order-ctn{
+  display:inline-flex;
+  float:right;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: super;
+    select{
+      border-color: #CCC;
+      border-top-color: #777;
+      background-color: #fff;
+      font-family: 'Roboto', sans-serif;
+      color: #444;
+      font-size: 10px;
+      height: 20px;
+    }
+    select:focus{
+      outline-color: inherit;
+
+    }
+
+}
+.order-label{
+  font-size:12px;
+  padding-top: 5px;
 }
 .cluster {
   float:left;

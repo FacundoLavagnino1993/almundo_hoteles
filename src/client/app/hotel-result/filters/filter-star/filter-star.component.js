@@ -5,7 +5,8 @@
         .component('filterStar',{
             controller: filterStarController,
             bindings: {
-                filters: '<'
+                filters: '<',
+                hotels: '<',
             },
             require: {
                 hotelsController: '^hotelsRoot'
@@ -52,6 +53,7 @@
 
 
         };
+
 
         this.filterByStars = function(star){
 

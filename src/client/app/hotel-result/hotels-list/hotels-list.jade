@@ -1,4 +1,14 @@
 ul.container-fluid.hotel-container
+    .order-ctn
+        .order-label
+            p Ordenar&nbsp
+        .order-select
+            select
+                option(value="relevantes") Más relevantes
+                option(value="minPrice") Precio más bajo
+                option(value="maxPrice") Precio más alto
+                option(value="minStar") Menos estrellas
+                option(value="maxStar") Más estrellas
     li(ng-repeat='hotel in $ctrl.hotels |filterPrice:($ctrl.filters.price)|filterName:($ctrl.filters.nameFilter)|filterStar:($ctrl.filters.stars) track by $index')
         hotel-item(item='hotel')
         

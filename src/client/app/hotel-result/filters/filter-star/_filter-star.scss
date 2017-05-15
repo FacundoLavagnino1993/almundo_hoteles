@@ -3,18 +3,22 @@
   padding-left: 10px;
   padding-bottom: 5px;
   position: absolute;
+  font-size:12px;
+
 }
 
 #input-star{
   margin-top: 20px;
   margin-left: 15px;
   padding: 20px 0 0 0;
-
+  text-align: left;
 }
 .check-ctn{
+  text-align: left;
   margin-top: -12px;
   margin-left: 15px;
   padding: 20px 0 0 0;
+  font-size: 12px;
   vertical-align: super;
 }
 .stars-ctn{
@@ -28,6 +32,6 @@
 
 }
 .count-hotels{
-  color:black;
+  color:#333;
   font-weight: bold;
 }

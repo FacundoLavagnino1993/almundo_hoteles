@@ -3,7 +3,8 @@
 @import "../app/hotel-result/hotels-list/hotel-list";
 @import "../app/hotel-result/search/search";
 @import "../app/hotel-result/filters/filters";
-
+@import "../app/hotel-result/map/map";
+@import "../app/header-footer/header/header";
 
 body {
 	//background-color: #888888;
@@ -21,7 +22,7 @@ body {
 	font-size: 10px;
 }
 
-.filter-ctn{
+.aside-ctn{
 	padding: 0px;
 	height:100%;
 	width: 100%;

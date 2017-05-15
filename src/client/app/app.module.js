@@ -3,6 +3,6 @@
 
   angular
     .module('app', [
-      'hotelsResult','slider','filters','rzModule'
+      'hotelsResult','slider','filters','rzModule','headerFooter'
     ]);
 })();

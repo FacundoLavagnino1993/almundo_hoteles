@@ -1,10 +1,13 @@
 .container-fluid
     main.row
-        section.breadcrumb-ctn
+        section.header.col-xs-12.col-sm-12.col-md-12
+                header
+        section.breadcrumb-ctn.col-xs-12.col-sm-12.col-md-12
                 breadcrumb
-        section.search-ctn
+        section.search-ctn.col-xs-12.col-sm-12.col-md-12
                 search
-        section.filter-ctn.col-xs-12.col-sm-12.col-md-3
+        section.aside-ctn.col-xs-12.col-sm-12.col-md-3
+                map
                 filters(filters = "$ctrl.filters")
         section.hotels-ctn.col-xs-12.col-sm-12.col-md-9
                 hotels-list(hotels = "$ctrl.hotels" filters = "$ctrl.filters")

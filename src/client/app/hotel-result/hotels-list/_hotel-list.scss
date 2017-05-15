@@ -33,7 +33,9 @@ ul{
       outline-color: inherit;
 
     }
-
+  @media only screen and (max-width: 991px){
+    padding-right:42%;
+  }
 }
 .order-label{
   font-size:12px;

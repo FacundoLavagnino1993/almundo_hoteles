@@ -6,6 +6,7 @@ const path = require('path');
 
 // API routes Async
 app.use('/static', express.static('./build'));
+app.use('/src', express.static(path.join(__dirname, './../../src')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 //API routes

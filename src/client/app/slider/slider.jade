@@ -1,6 +1,6 @@
 div.sliders
   ul.items-ctn
-    li(ng-repeat="slide in $ctrl.items track by $index")
+    li(ng-repeat="slide in $ctrl.items")
       div.hotel-image(ng-style="{'background-image':'url({{slide}})'}" ng-show="$ctrl.currentIndex == $index")
       //img(ng-src="{{slide}}" ng-show="$ctrl.currentIndex == $index")
 

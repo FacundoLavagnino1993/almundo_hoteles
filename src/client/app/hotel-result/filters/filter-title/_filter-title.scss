@@ -1,8 +1,21 @@
 .filter-title{
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px;
+  color: #157ab1;
+  font-size: 14px;
+  .fa-sort-desc{
+    vertical-align: 25%;
+  }
+  @media only screen and(min-width: 992px) {
+    text-align: right;
+    color:#333333;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    .fa-sort-desc{
+      display:none;
+    }
+  }
+
 }
 
 .delete-filter{
@@ -12,6 +25,7 @@
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
   padding-top: 5px;
+  cursor: pointer;
 }
 .delete-filter:hover{
   text-decoration: underline;
